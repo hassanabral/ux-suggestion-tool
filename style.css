@@ -1,0 +1,210 @@
+#ux-research-suggestion-tool button.costume-btn {
+   font-family: 'Work Sans', sans-serif;
+   font-size: 18px;
+   color: #fff;
+   border: 0;
+   border-radius: 3px;
+   padding: 15px 30px;
+   margin: 20px 5px;
+
+}
+
+#ux-research-suggestion-tool button.costume-btn:hover {
+   color: #fff;
+}
+
+#ux-research-suggestion-tool button#back {
+   background-color: #ddd;
+   color: #333;
+   font-size: 16px;
+   padding: 15px 30px;
+   margin: 10px 5px;
+
+}
+
+#ux-research-suggestion-tool button#back:hover {
+   background-color: #ccc;
+   color: #333;
+}
+
+.slide {
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   z-index: 1;
+   opacity: 0;
+   transition: opacity 0.5s;
+}
+
+.active-slide {
+   opacity: 1;
+   z-index: 2;
+}
+
+.quiz-container {
+   position: relative;
+   min-height: 500px;
+}
+
+#top-heading h1 {
+   color: #333;
+   margin-bottom: 1rem;
+}
+
+#top-heading p {
+   margin-bottom: 3rem;
+   color: #6e6d7a;
+   font-size: 1rem;
+   font-weight: 600;
+}
+
+label {
+   cursor: pointer;
+   margin: 0;
+}
+
+label p {
+   color: #757575;
+   font-size: 0.9rem;
+}
+
+label h2 {
+   color: #0d0c22;
+}
+
+
+label:hover {
+   background: #fafafa;
+   border: 1px solid #fafafa;
+   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.select-button {
+   display: flex;
+   width: 24px;
+   height: 24px;
+   border: 1px solid #dbdbde;
+   background: #fff;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.select-button:hover {
+   border-color: #333;
+   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.icon-12 {
+   width: 12px;
+   height: 12px;
+}
+
+input[type="radio"]:checked + label .select-button svg, input[type="checkbox"]:checked + label .select-button svg {
+   display: inline-block !important;
+}
+
+input[type="radio"]:checked + label .select-button, input[type="checkbox"]:checked + label .select-button {
+   border-color: var(--vt-burntOrange);
+   background: var(--vt-burntOrange);
+   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.text-white {
+   color: #fff;
+}
+
+svg:not(:root) {
+   overflow: hidden;
+}
+
+.fill-current {
+   fill: currentColor;
+}
+
+#top-heading {
+   text-align: center;
+}
+
+button.badge {
+   border: 0;
+}
+
+section > div {
+   padding: 0.5rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+   display: none;
+}
+
+label {
+   min-height: 20rem;
+   display: block;
+   background: white;
+   border: 1px solid #e7e7e9;
+   border-radius: 20px;
+   padding: 1rem;
+   margin-bottom: 1rem;
+   position: relative;
+   -webkit-transition: all 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
+   transition: all 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+
+input[type="radio"]:checked + label, input[type="checkbox"]:checked + label {
+   background: #fff;
+   border-color: var(--vt-burntOrange);
+}
+
+@media only screen and (max-width: 700px) {
+   section {
+      flex-direction: column;
+   }
+
+   label {
+      min-height: auto;
+   }
+
+   .quiz-container {
+      min-height: 775px;
+   }
+}
+
+#progress-bar span {
+   cursor: pointer;
+   padding: 3px 0;
+   width: 100%;
+   border: var(--vt-maroon-1t) 1px solid;
+   border-left-width: 0;
+   text-align: center;
+}
+
+.text-gray {
+   color: #333;
+}
+
+.custom-link {
+   color: #333;
+   text-decoration: underline;
+}
+
+.custom-link:hover {
+   color: #c64600;
+}
+
+button.select-opt[data-selected='true'] {
+   color: #fff;
+   background: var(--vt-burntOrange);
+}
+
+button.select-opt[data-selected='false'] {
+   color: #212529;
+   background: #e5e1e6;
+}
